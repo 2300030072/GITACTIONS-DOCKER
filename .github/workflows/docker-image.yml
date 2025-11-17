@@ -31,7 +31,6 @@ jobs:
           file: ./STUDENTAPI-SPRINGBOOT/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/lab10gitactions-backend:latest
-
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
         with:
